@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Facebook</title>
+<link rel="stylesheet" href="facebook.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/facebook.png">
+
+</head>
+
+<!-- Topbar -->
+<header class="topbar">
+  <div class="wrap">
+    <div class="logo">Facebook</div>
+    <div class="search" role="search">
+      <input placeholder="Buscar en Facebook" aria-label="Buscar">
+    </div>
+    <div class="top-actions">
+<div class="icon-btn" title="Inicio">
+  <img src="img/inicio.png" alt="Inicio" class="icono-top">
+</div>
+<div class="icon-btn" title="Mensajes">
+  <img src="img/messenger.png" alt="Mensajes" class="icono-top">
+</div>
+<div class="icon-btn" title="Notificaciones">
+  <img src="img/notificacion.png" alt="Notificaciones" class="icono-top">
+</div>
+<div class="icon-btn" title="Cuenta">
+  <img src="img/cuenta.png" alt="Cuenta" class="icono-top">
+</div>
+
+    </div>
+  </div>
+</header>
+
+<!-- Main content -->
+<main class="main">
+
+  <!-- Left sidebar -->
+  <aside class="sidebar-left">
+    <div class="card">
+      <div style="display:flex; gap:10px; align-items:center; margin-bottom:8px;">
+  <img src="img/principal.jpg" alt="Tu Nombre" style="width:56px; height:56px; border-radius:50%; object-fit:cover;">
+  <div>
+    <div style="font-weight:600">Tu Nombre</div>
+    <div style="font-size:13px;color:var(--muted)">Ver perfil</div>
+  </div>
+</div>
+
+      <div class="menu-item">
+  <img src="img/inicio.png" alt="Inicio" class="icono-menu">
+  <div>Inicio</div>
+</div>
+
+<div class="menu-item">
+  <img src="img/amigos.png" alt="Amigos" class="icono-menu">
+  <div>Amigos</div>
+</div>
+
+<div class="menu-item">
+  <img src="img/explorar.png" alt="Explorar" class="icono-menu">
+  <div>Explorar</div>
+</div>
+
+<div class="menu-item">
+  <img src="img/configuraci+on.png" alt="Configuración" class="icono-menu">
+  <div>Configuración</div>
+</div>
+
+    </div>
+
+    <div class="card">
+      <div style="font-weight:600; margin-bottom:8px">Atajos</div>
+    <div class="menu-item">
+      <img src="img/marketplace.png" alt="Trípticos" class="icono-menu">
+      <div>Marketplace</div>
+    </div>
+
+<div class="menu-item">
+  <img src="img/messenger.png" alt="Álbum" class="icono-menu">
+  <div>Messenger</div>
+</div>
+
+<div class="menu-item">
+  <img src="img/avatares.png" alt="Páginas" class="icono-menu">
+  <div>Avatares</div>
+</div>     
+    </div>
+  </aside>
+
+  <!-- Feed -->
+  <section class="feed">
+    <!-- Composer -->
+    <div class="composer card" role="region" aria-label="Crear publicación">
+      <div class="avatar" >
+        <img src="img/principal.jpg" alt="Tu foto" style="width:40px; height:40px; border-radius:50%; object-fit:cover;">
+
+      </div>
+      <div class="composer-box">
+        <textarea placeholder="¿En qué estás pensando?" aria-label="Texto de publicación"></textarea>
+        <div class="composer-actions">
+          <div class="compose-buttons">
+            <button class="action-btn"> Foto</button>
+            <button class="action-btn"> Video</button>
+            <button class="action-btn"> Estado</button>
+          </div>
+          <div><button class="action-btn" style="background:var(--blue); color:white; padding:8px 12px; border-radius:8px;">Publicar</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sample posts -->
+<article class="post">
+  <div class="post-header">
+    <img src="img/deapool.jpg" alt="deapool" class="imagen-simp">
+    <div>
+      <div class="post-name">Cortos de deapool</div>
+      <div class="post-meta">Hoy · Solo miembros</div>
+    </div>
+  </div>
+
+  <div class="post-body">
+    Corto de deapool 3.
+    <video controls class="post-video">
+      <source src="img/Deapoolmp4.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  </div>
+
+  <div class="post-actions">
+    <div style="display:flex; gap:8px;">
+      <div class="action-btn"> Me gusta</div>
+      <div class="action-btn"> Comentar</div>
+      <div class="action-btn"> Compartir</div>
+    </div>
+    <div class="post-meta">45 · 6 comentarios</div>
+  </div>
+</article>
+
+
+<article class="post">
+  <div class="post-header">
+    <img src="img/simpons.jpeg" alt="Logo del grupo" class="imagen-simp">
+    <div>
+      <div class="post-name">Cortos de Los Simpsons</div>
+      <div class="post-meta">Ayer · Solo miembros</div>
+    </div>
+  </div>
+
+  <div class="post-body">
+    Me llaman del bar de Moe.
+    <video controls class="post-video">
+      <source src="img/Homero.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  </div>
+
+  <div class="post-actions">
+    <div style="display:flex; gap:8px;">
+      <div class="action-btn"> Me gusta</div>
+      <div class="action-btn"> Comentar</div>
+      <div class="action-btn"> Compartir</div>
+    </div>
+    <div class="post-meta">45 · 6 comentarios</div>
+  </div>
+</article>
+
+
+  </section>
+
+  <!-- Right sidebar -->
+  <aside class="sidebar-right">
+    <div class="card">
+      <div class="title">Contactos</div>
+      <div class="contact">
+         <img src="img/juan.jpg" alt="Juan Pérez" class="contact-img">
+         <div>Juan Pérez</div>
+    </div>
+    <div class="contact">
+         <img src="img/ana.jpg" alt="Ana Gómez" class="contact-img">
+         <div>Ana Gómez</div>
+    </div>
+    <div class="contact">
+         <img src="img/grupo.jpeg" alt="Grupo - Devs" class="contact-img">
+         <div>Grupo de Amigos</div>
+    </div>
+    </div>
+
+    <div class="card">
+      <div class="title">
+         <img src="img/eventos.png" alt="Eventos" class="icono-titulo">
+        Eventos</div>
+      <div style="font-size:14px; color:var(--muted)">Sábado · Feria tecnológica</div>
+      <div style="font-size:14px; color:var(--muted); margin-top:8px;">Domingo · Taller CSS</div>
+    </div>
+  </aside>
+
+</main>
+
+</body>
+</html>
